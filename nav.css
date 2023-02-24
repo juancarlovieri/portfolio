@@ -1,0 +1,29 @@
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.nav-link {
+  color: azure;
+  transition: all 0.3s;
+  padding-right: 0.7rewm !important;
+  padding-left: 0.7rem !important;
+}
+
+.nav-link:hover {
+  color: #e78be1;
+  transition: all 0.3s;
+}
+.nav-theme {
+  color: azure;
+}
+@media screen and (max-width: 800px) {
+  .extra-padding {
+    padding-top: 110px;
+  }
+}
+@media screen and (min-width: 801px) {
+  .extra-padding {
+    padding-top: 80px;
+  }
+}

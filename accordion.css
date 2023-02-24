@@ -1,0 +1,77 @@
+:root {
+    --main-text-color: #2D112B;
+    --main-light-color: #fad4f7;    
+    --main-dark-color: #ffdffd;
+
+    --background-header: #ffc8fb;
+    --background-header-hover: #fd80f5;
+    --background-header-active: #ffa1fa;
+    --button-color: #a00095;
+    --button-hover-color: #7a3075;
+
+    --block-border: #a00095;
+    /* --accordion-border: #eeb5ff; */
+    --accordion-border: #b5f0ff;
+
+}
+
+#accordion{
+    margin: 20px;
+    padding: 0;
+    border-style: solid;
+    border-color: var(--accordion-border);
+    border-width: 0 5px 0 5px;
+    color: var(--main-text-color);
+}
+
+.accordion_button{
+    margin-right: 4px;
+    margin: 2px;
+    color: var(--button-color);
+    transition: all 0.8s;
+}
+
+.accordion_button:hover{
+    color: var(--button-hover-color);
+    transition: all 0.8s;
+}
+
+
+.accordion_content{
+    padding: 5px;
+    background-color: var(--main-light-color);
+    text-align: center;
+}
+
+
+.accordion_block{
+    border-style: solid;
+    border-width: 0.05em 0 0.05em 0;
+  
+    border-radius: 0.2em; /* 5px rounded corners */
+    border-color: var(--block-border);
+}
+
+.accordion_header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--background-header);
+    transition: all 0.3s;
+}
+
+.active{
+    background-color: var(--background-header-active);
+    transition: all 0.3s;
+}
+
+.accordion_header:hover{
+    background-color: var(--background-header-hover);
+    transition: all 0.3s;
+}
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="https://cdn.glitch.me/5d889d33-ba37-48ca-9c56-15697b161279%2Ffavicon.3e5cefde8fec.ico?v=1636435607979">
+
+<meta name="author" content="Juan Carlo Vieri">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Juan Carlo Vieri Learns JQuery&#39;s Accordion">
+<title>More About Me</title>
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" /> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="./btn.css" rel="stylesheet" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha512-F636MAkMAhtTplahL9F6KmTfxTmYcAcjcCkyu0f0voT3N/6vzAuJ4Num55a0gEJ+hRLHhdz3vDvZpf6kqgEa5w==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha512-hievggED+/IcfxhYRSr4Auo1jbiOczpqpLZwfTVL/6hFACdbI3WQ8S9NCX50gsM9QVE+zLk/8wb9TlgriFbX+Q==" crossorigin="anonymous">
+
+<link href="./style.css" rel="stylesheet" type="text/css" />
+<link href="./nav.css" rel="stylesheet" type="text/css" />
+<link href="./accordion.css" rel="stylesheet" type="text/css" />
+<link href="./formstyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="vsc-initialized">
+
+<nav id="main-navbar" class="navbar navbar-expand-lg sticky-top " style="background-color: #2D112B">
+<a class=" navbar-brand nav-link" href="index.html">Juan Carlo Vieri's Portfolio</a>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="nav navbar-nav ml-auto navbar-right">
+<li class="nav-item">
+<a class="nav-link" href="index.html">
+  <strong>Home</strong>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="facts.html">
+  <strong>Fun Facts</strong>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+
+<section id="first-section" class="my-container d-flex flex-column dark-color align-items-center text-center" style="justify-content: flex-start;">
+<h1 class="top-title">Know Me <span class="bold-font">More</span></h1>
+<div class="d-flex flex-row">
+<div class="btn btn-danger mr-2" id="collapsebtn">Collapse All</div>
+<div class="btn btn-success mr-2" id="showbtn">Show All</div>
+<input type="checkbox" data-toggle="toggle" data-on="Satu-Satu" data-off="Bebas" data-onstyle="primary" data-offstyle="warning" id="id_one"></div>
+<!-- <div class="toggle-group">
+  <label class="btn btn-primary toggle-on">Satu-Satu</label>
+  <label class="btn btn-warning active toggle-off">Bebas</label>
+  <span class="toggle-handle btn btn-default"></span></div></div>
+</div> -->
+<div id="accordion" class="card">
+<div class="accordion_block">
+<div class="accordion_header d-flex justify-content-between p-4">
+🎈 Daily Activities
+<div>
+<span class="accordion_button accordion_up"><i class="fas fa-arrow-alt-circle-up"></i></span><span class="accordion_button accordion_down"><i class="fas fa-arrow-alt-circle-down"></i></span>
+</div>
+</div>
+<div class="accordion_content" style="">
+<p>
+🍫 Drinking hot chocolate <br>
+🧩 Solving puzzles <br>
+🖊️ Playing tic tac toe <br>
+♟️ Playing board games <br>
+🎮 Playing Valorant dan Minecraft <br>
+😴 Napping
+</p>
+</div>
+</div>
+<div class="accordion_block">
+<div class="accordion_header d-flex justify-content-between p-4">
+🎈 Organizations
+<div>
+<span class="accordion_button accordion_up"><i class="fas fa-arrow-alt-circle-up"></i></span><span class="accordion_button accordion_down"><i class="fas fa-arrow-alt-circle-down"></i></span>
+</div>
+</div>
+<div class="accordion_content" style="">
+💯 TOKI <strong>(2020 - Now)</strong> <br>
+</div>
+</div>
+<div class="accordion_block">
+<div class="accordion_header d-flex justify-content-between p-4">
+🎈 Achievements
+<div>
+<span class="accordion_button accordion_up"><i class="fas fa-arrow-alt-circle-up"></i></span><span class="accordion_button accordion_down"><i class="fas fa-arrow-alt-circle-down"></i></span>
+</div>
+</div>
+<div class="accordion_content" style="">
+<p>
+<i style="color: brown;" class="fas fa-medal"></i> Third Winner of the 2019 ICPC Asia Kuala Lumpur
+Regional Contest <br>
+<i style="color: goldenrod;" class="fas fa-medal"></i> National Gold Medalist of the 2019 ICPC Asia
+Jakarta Regional Contest <br>
+<i style="color: silver;" class="fas fa-medal"></i> Second Winner of The 2019 Indonesia National
+Contest (INC) <br>
+<i style="color: silver;" class="fas fa-medal"></i> Second Winner of ARKAVIDIA 6.0 Competitive
+Programming Competition <br>
+<i style="color: goldenrod;" class="fas fa-medal"></i> First Winner of Find It! Competitive
+Programming Competition <br>
+</p>
+</div>
+</div>
+<div class="accordion_block">
+<div class="accordion_header d-flex justify-content-between p-4">
+🎈 Hobbies
+<div>
+<span class="accordion_button accordion_up"><i class="fas fa-arrow-alt-circle-up"></i></span><span class="accordion_button accordion_down"><i class="fas fa-arrow-alt-circle-down"></i></span>
+</div>
+</div>
+<div class="accordion_content" style="">
+<p>
+💻 I Code
+</p>
+</div>
+</div>
+<div class="accordion_block">
+<div class="accordion_header d-flex justify-content-between p-4">
+🎈 Cool Stuff
+<div>
+<span class="accordion_button accordion_up"><i class="fas fa-arrow-alt-circle-up"></i></span><span class="accordion_button accordion_down"><i class="fas fa-arrow-alt-circle-down"></i></span>
+</div>
+</div>
+<div class="accordion_content" style=""><iframe width="100%" height="100%" id="existing-iframe-example" src="./More About Me_files/YddwkMJG1Jo.html" frameborder="0" style="border: solid 4px #37474F"></iframe>
+</div>
+</div>
+<div class="accordion_block">
+<div class="accordion_header d-flex justify-content-between p-4">
+🎈 Age of War
+<div>
+<span class="accordion_button accordion_up"><i class="fas fa-arrow-alt-circle-up"></i></span><span class="accordion_button accordion_down"><i class="fas fa-arrow-alt-circle-down"></i></span>
+</div>
+</div>
+<div class="accordion_content" style="">
+<iframe width="100%" height="400px" src="./More About Me_files/20398.html" scrolling="no"></iframe>
+</div>
+</div>
+</div>
+</section>
+<footer id="contact-me" class="footer-container d-flex flex-column light-color align-items-center">
+<div id="social">
+<p>
+<a href="https://www.facebook.com/HockyYudhiono"><i id="social-fb" class="fab fa-facebook fa-3x social"></i></a>
+<a href="mailto:hocky.yudhiono@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+<a href="https://github.com/hockyy"><i id="social-git" class="fab fa-github fa-3x social"></i></a>
+<a href="https://api.whatsapp.com/send?phone=+6281807240802"><i id="social-wa" class="fab fa-whatsapp-square fa-3x social"></i></a>
+<a href="https://www.linkedin.com/in/hocky/"><i id="social-li" class="fab fa-linkedin fa-3x social"></i></a>
+<a href="https://www.instagram.com/__hocky/"><i id="social-ig" class="fab fa-instagram-square fa-3x social"></i></a>
+</p>
+</div>
+<div id="fb-message">
+<strong>Facebook</strong> is pretty cool to chat!
+</div>
+<div id="em-message">
+<strong>Email</strong> for legit and serious stuffs I guess(?)
+</div>
+<div id="git-message">
+Check my <strong>Github</strong> here!
+</div>
+<div id="wa-message">
+<strong>Whatsapp</strong> can bring us pretty close..
+</div>
+<div id="li-message">
+<strong>LinkedIn</strong> is like portfolio on steroid.
+</div>
+<div id="ig-message">
+Check my daily life on <strong>Instagram</strong>
+</div>
+</footer>
+
+<script src="./accordion.js"></script>
+<script src="./bootstrap.min.js"></script>

@@ -1,0 +1,17 @@
+.toggle-handle{
+  z-index: 100;
+  background-color: white !important;
+}
+
+.form-check{
+  padding-left: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  /* justify-items: center; */
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.form-check-label{
+  margin-bottom: 8px;
+}form
