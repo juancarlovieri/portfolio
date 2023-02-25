@@ -14,6 +14,10 @@
   font-size:  4vw;
   line-height: 1.2;
 }
+.profpic {
+  height:  40px;
+  vertical-align:  bottom;
+}
 html,
 body {
   margin: 0;
